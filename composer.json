@@ -1,6 +1,6 @@
 {
-    "name": "ogioncz/flarum-webhooks-telegram-bridge",
-    "type": "project",
+    "name": "misthero/flarum-webhooks-telegram-bridge",
+    "type": "flarum-extension",
     "require": {
         "longman/telegram-bot": "^0.72.0"
     },
@@ -10,5 +10,21 @@
             "name": "Jan Tojnar",
             "email": "jtojnar@gmail.com"
         }
-    ]
+    ],
+    "require": {
+        "flarum/core": "^1.0.0"
+    },
+    "extra": {
+    "flarum-extension": {
+      "title": "Flarum Webhooks Telegram Bridge",
+      "category": "feature",
+      "icon": {
+        "name": "fas fa-telegram",
+        "backgroundColor": "#e74c3c",
+        "color": "#fff"
+      },
+      "optional-dependencies": [
+        "flarum/tags"
+      ]
+    }
 }
